@@ -1,6 +1,6 @@
 # Portfolio · Francisco Michel Lamberto
 
-Mi portfolio profesional: quién soy, qué estudio y los siete proyectos que tengo publicados, cada uno con su demo en vivo.
+Mi portfolio profesional: quién soy, qué estudio y los cinco proyectos que tengo publicados, cada uno con su demo en vivo.
 
 **[fran951xd.github.io](https://fran951xd.github.io/)**
 
