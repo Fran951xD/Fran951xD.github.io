@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Francisco Michel Lamberto · Desarrollador web full stack</title>
-  <meta name="description" content="Portfolio de Francisco Michel Lamberto, estudiante de Ingeniería en Sistemas (UTN FRC). Cinco aplicaciones web publicadas, con demo en vivo y tests automáticos: JavaScript, TypeScript, Next.js y bases de datos.">
+  <meta name="description" content="Portfolio de Francisco Michel Lamberto, estudiante de Ingeniería en Sistemas (UTN FRC). Desarrollador web full stack: siete aplicaciones publicadas, con demo en vivo y tests automáticos. Python (FastAPI), JavaScript, TypeScript, Next.js, SQL e integración de IA.">
   <meta name="theme-color" content="#F1EEE8">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Francisco Michel Lamberto · Portfolio">
-  <meta property="og:description" content="Desarrollador web full stack. Cinco aplicaciones web publicadas, cada una con demo en vivo.">
+  <meta property="og:description" content="Desarrollador web full stack con Python y JavaScript. Siete aplicaciones publicadas, cada una con demo en vivo.">
   <meta property="og:image" content="https://fran951xd.github.io/img/og.png">
   <meta property="og:url" content="https://fran951xd.github.io/">
   <meta name="twitter:card" content="summary_large_image">
@@ -41,8 +41,8 @@
       <div class="tarjeta tarjeta--lima portada__intro">
         <p class="etiqueta">Portfolio · 2026</p>
         <h1 id="titulo"><span class="portada__nombre">Francisco</span><span class="portada__apellido">Michel Lamberto</span></h1>
-        <p class="portada__rol"><span class="pastilla pastilla--oscura">Desarrollador web full stack</span><span class="pastilla">JavaScript y TypeScript</span><span class="pastilla">Bases de datos</span></p>
-        <p class="portada__bajada">Construyo aplicaciones web completas, de la base de datos a la interfaz, que resuelven problemas concretos: turnos, stock, oficios, finanzas. Todo lo que ves acá está publicado y se puede probar.</p>
+        <p class="portada__rol"><span class="pastilla pastilla--oscura">Desarrollador web full stack</span><span class="pastilla">Python y JavaScript</span><span class="pastilla">Bases de datos</span></p>
+        <p class="portada__bajada">Construyo aplicaciones web completas, de la base de datos a la interfaz, con Python y JavaScript, que resuelven problemas concretos: gastos compartidos, turnos, stock, oficios, documentos. Todo lo que ves acá está publicado y se puede probar.</p>
         <div class="portada__acciones">
           <a class="boton boton--oscuro" href="#proyectos">Ver proyectos <span aria-hidden="true">↓</span></a>
           <a class="boton boton--borde" href="#contacto">Escribirme</a>
@@ -56,7 +56,7 @@
 
       <div class="tarjeta tarjeta--negra portada__dato">
         <p class="etiqueta etiqueta--lima">En producción</p>
-        <p class="numero">5</p>
+        <p class="numero">7</p>
         <p>aplicaciones publicadas, cada una con <strong>demo en vivo</strong>, código abierto y tests que corren en cada cambio.</p>
       </div>
       <div class="tarjeta tarjeta--lavanda portada__dato">
@@ -84,12 +84,35 @@
 
       <div class="proyectos">
         <article class="proyecto revelar">
+          <a class="proyecto__captura" href="https://fran951xd.github.io/vaquita/despertando/" target="_blank" rel="noopener" aria-label="Abrir la demo de Vaquita">
+            <span class="ventana" aria-hidden="true"><i></i><i></i><i></i><b>vaquita-k36x.onrender.com</b></span>
+            <img src="img/vaquita.webp" width="1280" height="800" loading="lazy" alt="Vaquita: gastos de un viaje a Bariloche, saldos de cada persona y transferencias para quedar a mano">
+          </a>
+          <div class="proyecto__texto">
+            <p class="proyecto__tipo"><span>01</span>Full stack Python · Finanzas</p>
+            <h3>Vaquita</h3>
+            <p class="proyecto__frase">Dividir gastos con amigos o en un viaje: cada uno anota lo que puso, en pesos o dólares, y la app dice quién le pasa cuánto a quién.</p>
+            <ul class="proyecto__puntos">
+              <li>La plata nunca usa <code>float</code>: centavos enteros, y ninguna forma de dividir pierde ni inventa un centavo.</li>
+              <li>Quedar a mano con <strong>como mucho personas − 1</strong> transferencias, con las invariantes probadas por Hypothesis sobre miles de grupos al azar.</li>
+              <li>190 tests con 96 % de cobertura, corriendo contra SQLite y PostgreSQL en CI; CSRF, CSP estricta y Argon2.</li>
+            </ul>
+            <p class="chips"><span>Python</span><span>FastAPI</span><span>SQLAlchemy</span><span>PostgreSQL</span><span>HTMX</span><span>pytest</span></p>
+            <div class="proyecto__acciones">
+              <a class="boton boton--oscuro" href="https://fran951xd.github.io/vaquita/despertando/" target="_blank" rel="noopener">Abrir demo <span aria-hidden="true">↗</span></a>
+              <a class="boton boton--borde" href="https://github.com/Fran951xD/vaquita" target="_blank" rel="noopener">Ver código</a>
+            </div>
+            <p class="proyecto__nota">«Ver un ejemplo» abre un viaje con 30 gastos. El hosting gratis se duerme: la primera visita puede tardar un minuto.</p>
+          </div>
+        </article>
+
+        <article class="proyecto revelar">
           <a class="proyecto__captura" href="https://puntual-asy.pages.dev" target="_blank" rel="noopener" aria-label="Abrir la demo de Puntual">
             <span class="ventana" aria-hidden="true"><i></i><i></i><i></i><b>puntual-asy.pages.dev</b></span>
             <img src="img/puntual.webp" width="1280" height="800" loading="lazy" alt="Puntual: panel del profesional con los turnos del día">
           </a>
           <div class="proyecto__texto">
-            <p class="proyecto__tipo"><span>01</span>SaaS · Turnos online</p>
+            <p class="proyecto__tipo"><span>02</span>SaaS · Turnos online</p>
             <h3>Puntual</h3>
             <p class="proyecto__frase">Agenda online para profesionales independientes: los clientes reservan solos y el profesional maneja todo desde un panel.</p>
             <ul class="proyecto__puntos">
@@ -112,7 +135,7 @@
             <img src="img/changa.webp" width="1280" height="800" loading="lazy" alt="Changa: resultados de búsqueda de trabajadores de oficio con mapa">
           </a>
           <div class="proyecto__texto">
-            <p class="proyecto__tipo"><span>02</span>Full stack · Marketplace</p>
+            <p class="proyecto__tipo"><span>03</span>Full stack · Marketplace</p>
             <h3>Changa</h3>
             <p class="proyecto__frase">Directorio de oficios del barrio: plomeros, electricistas y gasistas publican su zona y los vecinos los encuentran y contactan por WhatsApp.</p>
             <ul class="proyecto__puntos">
@@ -129,12 +152,35 @@
         </article>
 
         <article class="proyecto revelar">
+          <a class="proyecto__captura" href="https://fran951xd.github.io/margen/" target="_blank" rel="noopener" aria-label="Abrir la demo de Margen">
+            <span class="ventana" aria-hidden="true"><i></i><i></i><i></i><b>fran951xd.github.io/margen</b></span>
+            <img src="img/margen.webp" width="1280" height="800" loading="lazy" alt="Margen: resumen de un PDF con citas al margen y el párrafo citado resaltado en el documento">
+          </a>
+          <div class="proyecto__texto">
+            <p class="proyecto__tipo"><span>04</span>Integración de IA · Documentos</p>
+            <h3>Margen</h3>
+            <p class="proyecto__frase">Resume y responde preguntas sobre tus PDFs con IA, y cada afirmación cita documento y página.</p>
+            <ul class="proyecto__puntos">
+              <li>Las citas <strong>se verifican</strong> contra el texto real de la página y se resaltan en el PDF; las que no aparecen se marcan para desconfiar.</li>
+              <li>Salida estructurada de Gemini con esquema JSON, búsqueda BM25 local cuando el texto no entra en el contexto y reintentos ante fallas.</li>
+              <li>Sin servidor: los PDFs quedan en el navegador y funciona sin conexión como PWA.</li>
+            </ul>
+            <p class="chips"><span>JavaScript</span><span>API de Gemini</span><span>pdf.js</span><span>BM25</span><span>PWA</span></p>
+            <div class="proyecto__acciones">
+              <a class="boton boton--oscuro" href="https://fran951xd.github.io/margen/" target="_blank" rel="noopener">Abrir demo <span aria-hidden="true">↗</span></a>
+              <a class="boton boton--borde" href="https://github.com/Fran951xD/margen" target="_blank" rel="noopener">Ver código</a>
+            </div>
+            <p class="proyecto__nota">«Probar con un documento de ejemplo» lo muestra funcionando sin clave de API.</p>
+          </div>
+        </article>
+
+        <article class="proyecto revelar">
           <a class="proyecto__captura" href="https://fran951xd.github.io/GONDOLA/" target="_blank" rel="noopener" aria-label="Abrir la demo de Góndola">
             <span class="ventana" aria-hidden="true"><i></i><i></i><i></i><b>fran951xd.github.io/GONDOLA</b></span>
             <img src="img/gondola-mostrador.webp" width="1280" height="800" loading="lazy" alt="Góndola: panel del día de un almacén con lo vendido hoy, ventas de los últimos 14 días y productos por agotarse">
           </a>
           <div class="proyecto__texto">
-            <p class="proyecto__tipo"><span>03</span>Comercio · Gestión de stock</p>
+            <p class="proyecto__tipo"><span>05</span>Comercio · Gestión de stock</p>
             <h3>Góndola</h3>
             <p class="proyecto__frase">Control de stock gratis para almacenes y kioscos: caja rápida con lector de códigos, faltantes y pedidos a proveedores.</p>
             <ul class="proyecto__puntos">
@@ -158,7 +204,7 @@
             <img src="img/mango.webp" width="1280" height="880" loading="lazy" alt="Mango: pizarra con las cotizaciones del dólar y su variación">
           </a>
           <div class="proyecto__texto">
-            <p class="proyecto__tipo"><span>04</span>Datos · Economía argentina</p>
+            <p class="proyecto__tipo"><span>06</span>Datos · Economía argentina</p>
             <h3>Mango</h3>
             <p class="proyecto__frase">El dólar, la inflación y las tasas de Argentina en un solo lugar, con calculadoras para decidir qué hacer con los pesos.</p>
             <ul class="proyecto__puntos">
@@ -180,7 +226,7 @@
             <img src="img/taller.webp" width="1280" height="800" loading="lazy" alt="Taller PDF: portada con las diez herramientas de conversión">
           </a>
           <div class="proyecto__texto">
-            <p class="proyecto__tipo"><span>05</span>Herramienta · Privacidad</p>
+            <p class="proyecto__tipo"><span>07</span>Herramienta · Privacidad</p>
             <h3>Taller PDF</h3>
             <p class="proyecto__frase">Convierte Word, Excel, PowerPoint, imágenes y HTML a PDF y al revés, sin subir los archivos a ningún servidor.</p>
             <ul class="proyecto__puntos">
@@ -244,8 +290,8 @@
       </div>
       <div class="sobre">
         <div class="tarjeta tarjeta--lavanda sobre__texto revelar">
-          <p class="sobre__destacado">Desarrollo aplicaciones web completas con JavaScript, TypeScript y bases de datos SQL, y me interesa que el software resuelva problemas reales de forma simple y confiable.</p>
-          <p>Soy de Córdoba y curso el tercer año de Ingeniería en Sistemas de Información en la UTN. En paralelo a la facultad elijo problemas cotidianos de acá (los turnos de una peluquería, el stock de un almacén, encontrar un plomero de confianza) y los resuelvo con software que cualquiera puede usar desde el celular.</p>
+          <p class="sobre__destacado">Desarrollo aplicaciones web completas con Python (FastAPI) y JavaScript/TypeScript (Next.js) sobre bases de datos SQL, integro IA cuando suma, y me interesa que el software resuelva problemas reales de forma simple y confiable.</p>
+          <p>Soy de Córdoba y curso el tercer año de Ingeniería en Sistemas de Información en la UTN. En paralelo a la facultad elijo problemas cotidianos de acá (dividir los gastos de un viaje, los turnos de una peluquería, el stock de un almacén, encontrar un plomero de confianza) y los resuelvo con software que cualquiera puede usar desde el celular.</p>
           <p>Busco mi primera experiencia profesional en modalidad remota part-time, en un equipo donde pueda aportar desde el primer día, aprender rápido de gente con más experiencia y crecer como desarrollador.</p>
         </div>
 
@@ -261,11 +307,11 @@
         <div class="tarjeta sobre__stack revelar">
           <p class="etiqueta">Con qué trabajo</p>
           <dl class="stack">
-            <div><dt>Lenguajes</dt><dd><span class="fuerte">JavaScript</span><span class="fuerte">TypeScript</span><span>SQL</span><span>HTML y CSS</span><span>Python</span></dd></div>
-            <div><dt>Backend y datos</dt><dd><span class="fuerte">Node.js</span><span>PostgreSQL</span><span>SQLite</span><span>Drizzle</span><span>IndexedDB</span></dd></div>
+            <div><dt>Lenguajes</dt><dd><span class="fuerte">Python</span><span class="fuerte">JavaScript</span><span class="fuerte">TypeScript</span><span>SQL</span><span>HTML y CSS</span></dd></div>
+            <div><dt>Backend y datos</dt><dd><span class="fuerte">FastAPI</span><span class="fuerte">Node.js</span><span>SQLAlchemy</span><span>PostgreSQL</span><span>SQLite</span><span>Drizzle</span><span>IndexedDB</span></dd></div>
             <div><dt>Frontend</dt><dd><span class="fuerte">Next.js</span><span>React</span><span>PWA</span><span>Service workers</span></dd></div>
-            <div><dt>Integraciones</dt><dd><span>APIs REST</span><span>Mercado Pago</span><span>Login con Google</span><span>Mapas (Leaflet)</span><span>WhatsApp</span></dd></div>
-            <div><dt>Calidad y despliegue</dt><dd><span>Playwright</span><span>Vitest</span><span>GitHub Actions</span><span>Cloudflare</span><span>Vercel</span><span>GitHub Pages</span><span>Git</span></dd></div>
+            <div><dt>Integraciones</dt><dd><span>APIs REST</span><span>API de Gemini (IA)</span><span>Mercado Pago</span><span>Login con Google</span><span>Mapas (Leaflet)</span><span>WhatsApp</span></dd></div>
+            <div><dt>Calidad y despliegue</dt><dd><span>pytest</span><span>Playwright</span><span>Vitest</span><span>GitHub Actions</span><span>Cloudflare</span><span>Vercel</span><span>GitHub Pages</span><span>Git</span></dd></div>
           </dl>
         </div>
 
